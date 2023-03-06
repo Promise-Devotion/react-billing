@@ -11,7 +11,7 @@ export const WelcomeLayout: React.FC = () => {
     from: { transform: location.pathname === '/welcome/1' ? 'translateX(0%)' : 'translateX(100%)' },
     enter: { transform: 'translateX(0%)' },
     leave: { transform: 'translateX(-100%)' },
-    config: { duration: 300 },
+    config: { duration: 3000 },
   })
   return transitions((style, pathname) =>
     <animated.div key={pathname} style={style}>
