@@ -1,7 +1,14 @@
-import { NavLink } from 'react-router-dom'
+import p from '../../assets/images/welcome1.svg'
+import './WelcomeItem.scss'
 
 export const Welcome1: React.FunctionComponent = () => {
   return (
-    <div style={{ border: '1px solid red' }}> 1 <NavLink to="/welcome/2">下一页</NavLink> </div>
+    <div className='contain'>
+      <img src={p} />
+      <h2>
+        会挣钱 <br/>
+        还要会省钱
+      </h2>
+    </div>
   )
 }

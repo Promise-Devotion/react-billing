@@ -8,7 +8,11 @@ import { Welcome3 } from '../pages/welcome/Welcome3'
 import { Welcome4 } from '../pages/welcome/Welcome4'
 
 export const router = createBrowserRouter([
-  { path: '/', element: <Root /> },
+  {
+    path: '/',
+    element: <WelcomeLayout />,
+    errorElement: <Root />,
+  },
   { path: '/home', element: <Home title="首页" /> },
   {
     path: '/welcome',
