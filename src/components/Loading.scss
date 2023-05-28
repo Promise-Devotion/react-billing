@@ -1,0 +1,24 @@
+.loading-contain{
+    text-align: center;
+    vertical-align: middle;
+    padding-top: 30vh;
+    .loading{
+        margin: auto;
+        width: 128px;
+        height: 128px;
+        margin-bottom: 18px;
+        border-radius: 50%;
+        border: 6px solid aqua;
+        border-color: aqua transparent;
+        animation: roate-loading 2.2s linear infinite;
+    }
+}
+
+@keyframes roate-loading{
+    from{
+        rotate: 0deg;
+    }
+    to{
+        rotate: 360deg;
+    }
+}
